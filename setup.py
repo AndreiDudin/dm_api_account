@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 REQUIRES = [
     'requests',
     'pydantic',
@@ -8,7 +8,7 @@ REQUIRES = [
 setup(
     name='dm_api_account',
     version='0.0.1',
-    packages=['dm_api_account'],
+    packages=find_packages(),
     url='https://github.com/AndreiDudin/dm_api_account.git',
     license='MIT',
     author='Andrey Dudin',
